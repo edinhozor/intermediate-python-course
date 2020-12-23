@@ -25,6 +25,10 @@ def main():
   else:
     print(f'Second Roll {roll1}.')
   print(f'{name1} have rolled a total of {dice_sum}.')
+  
+  f = open(str(name1)+ ".txt", "a")
+  f.write(str(name1) + " rolled " + str(roll) + " and " + str(roll1) + " with the total of " + str(dice_sum) + "." + "\n")
+  f.close()
 
 
 if __name__== "__main__":
